@@ -8,6 +8,10 @@ import VueLazyload from 'vue-lazyload'
 
 import 'common/stylus/index.styl'
 
+Vue.use(VueLazyload, {
+  loading: require('common/image/default.png')
+})
+
 fastclick.attach(document.body)
 
 /* eslint-disable no-new */
